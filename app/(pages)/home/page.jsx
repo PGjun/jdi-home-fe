@@ -87,23 +87,23 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="sm:w-[1170px] w-full pb-[300px] flex flex-col">
-        <section className="grid grid-cols-2 gap-[100px] h-[700px] items-center">
+      <div className="max-w-[1170px] w-full pb-[300px] flex flex-col gap-[50px] pt-[100px]">
+        <section className="grid sm:grid-cols-2 sm:gap-[100px] gap-5 sm:h-[600px] items-center justify-center">
           <ScrollActionBox className="" delay="200">
             <div className="h-[300px] bg-slate-200 w-full"></div>
           </ScrollActionBox>
           <ScrollActionBox className="">
             <h1 className="text-[32px] font-bold">{`titletitletitletitle`}</h1>
-            <div className="h-[300px] w-full whitespace-pre-line break-words">
+            <div className="h-[300px] w-[350px] sm:w-full whitespace-pre-line break-words">
               {`contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent`}
             </div>
           </ScrollActionBox>
         </section>
 
-        <section className="grid grid-cols-2 gap-[100px] h-[700px] items-center">
-          <ScrollActionBox className="">
+        <section className="grid sm:grid-cols-2 sm:gap-[100px] gap-5 sm:h-[600px] items-center justify-center">
+          <ScrollActionBox className="order-last sm:order-first">
             <h1 className="text-[32px] font-bold">{`titletitletitletitle`}</h1>
-            <div className="h-[300px] w-full whitespace-pre-line break-words">
+            <div className="h-[300px] w-[350px] sm:w-full whitespace-pre-line break-words">
               {`contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent`}
             </div>
           </ScrollActionBox>
@@ -112,13 +112,13 @@ export default function Home() {
           </ScrollActionBox>
         </section>
 
-        <section className="grid grid-cols-2 gap-[100px] h-[700px] items-center">
+        <section className="grid sm:grid-cols-2 sm:gap-[100px] gap-5 sm:h-[600px] items-center justify-center">
           <ScrollActionBox className="" delay="200">
             <div className="h-[300px] bg-slate-200 w-full"></div>
           </ScrollActionBox>
           <ScrollActionBox className="">
             <h1 className="text-[32px] font-bold">{`titletitletitletitle`}</h1>
-            <div className="h-[300px] w-full whitespace-pre-line break-words">
+            <div className="h-[300px] w-[350px] sm:w-full whitespace-pre-line break-words">
               {`contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent`}
             </div>
           </ScrollActionBox>
