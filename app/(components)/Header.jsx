@@ -60,7 +60,7 @@ export const Header = () => {
   return (
     <header
       className={`bg-white flex justify-center fixed w-full h-[70px] z-50 ${
-        scrolled ? "border-b border-gray-200 " : ""
+        scrolled ? "border-b border-gray-200" : "border-b border-gray-200"
       }`}
     >
       <main className="relative w-full sm:w-[1170px] flex justify-between items-center px-10 h-full">
