@@ -28,14 +28,14 @@ export default function Home() {
         <Image
           src={mainBanner}
           alt="main-banner"
-          className="min-w-[1100px] h-full opacity-50"
+          className="min-w-[1100px] h-[700px] sm:h-full opacity-50"
           placeholder="blur"
           style={{
             objectFit: "cover",
           }}
         />
         <div className=" bg-slate-300 z-10 absolute inset-0 opacity-10" />
-        <ScrollActionBox className="text-[64px] text-white font-bold flex flex-col absolute top-40 text-center gap-5">
+        <ScrollActionBox className="text-[38px] sm:text-[64px] text-white font-bold flex flex-col absolute top-40 text-center gap-5">
           <div className="text-[#2c2c2c]">
             <div>비즈니스 생태계 구축을 위한</div>
             <div>
