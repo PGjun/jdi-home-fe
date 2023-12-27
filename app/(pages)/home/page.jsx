@@ -28,25 +28,32 @@ export default function Home() {
         <Image
           src={mainBanner}
           alt="main-banner"
-          className="min-w-[1100px] h-[700px] sm:h-full opacity-50"
+          className="min-w-[1100px] h-[500px] sm:h-full opacity-50"
           placeholder="blur"
           style={{
             objectFit: "cover",
           }}
         />
         <div className=" bg-slate-300 z-10 absolute inset-0 opacity-10" />
-        <ScrollActionBox className="text-[38px] sm:text-[64px] text-white font-bold flex flex-col absolute top-40 text-center gap-5">
-          <div className="text-[#2c2c2c]">
-            <div>비즈니스 생태계 구축을 위한</div>
+        <ScrollActionBox className="text-[32px] sm:text-[64px] text-white font-bold flex flex-col absolute top-40 text-center gap-5">
+          <div className="text-[#2c2c2c] hidden sm:block">
+            <span>비즈니스 생태계 구축을 위한</span>
             <div>
               <span className="text-[#3886df]">“데이터 Biz.”</span>전문 기업
             </div>
+          </div>
+          <div className="text-[#2c2c2c] sm:hidden">
+            <div>비즈니스 생태계 구축을 </div>
+            <div>
+              위한<span className="text-[#3886df]">“데이터 Biz.”</span>
+            </div>
+            <div>전문 기업</div>
           </div>
         </ScrollActionBox>
 
         <button
           onClick={scrollToTarget}
-          className="absolute bottom-5 z-20 animate-bounce"
+          className="hidden sm:block absolute bottom-5 z-20 animate-bounce"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -66,16 +73,16 @@ export default function Home() {
 
       <div
         ref={scrollTargetRef}
-        className="min-h-screen py-[300px] text-[32px] font-bold w-full text-center flex justify-center"
+        className="sm:min-h-screen flex-col items-center h-[500px] text-[20px] sm:text-[32px] font-bold w-full text-center flex justify-center"
       >
-        <div className="whitespace-pre-line break-words max-w-[1170px]">
-          {`혁신적인 AI, 빅데이터분석 기술과 독창적인 사업 전략 전문가들이함께
-        비즈니스 생태계 구축을 위한 “데이터 Biz.” 전문 기업입니다`}
+        <div className="whitespace-pre-line break-words w-[400px] sm:w-[1170px]">
+          {`혁신적인 AI, 빅데이터분석 기술과 독창적인 사업 전략 전문가들이함께 
+          비즈니스 생태계 구축을 위한 “데이터 Biz.” 전문 기업입니다`}
         </div>
       </div>
 
-      <div className="min-h-screen py-[300px] text-[32px] font-bold bg-slate-100 w-full text-center flex justify-center">
-        <div className="whitespace-pre-line break-words max-w-[1170px]">
+      <div className="sm:min-h-screen flex-col items-center h-[500px] text-[20px] sm:text-[32px] font-bold bg-slate-100 w-full text-center flex justify-center">
+        <div className="whitespace-pre-line break-words w-[400px] sm:w-[1170px]">
           {`contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent`}
         </div>
       </div>
