@@ -18,6 +18,10 @@ const navmenu = [
     name: "Contact",
     path: "/contact",
   },
+  {
+    name: "Example",
+    path: "/example",
+  },
 ];
 
 export const Header = () => {

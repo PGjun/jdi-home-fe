@@ -1,8 +1,9 @@
 "use client";
-import mainBanner from "@/public/image/main-banner.jpg";
+import mainBanner from "@/public/image/banner1.jpg";
 import AOS from "aos";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
+
 export default function Home() {
   useEffect(() => {
     AOS.init();
@@ -23,20 +24,22 @@ export default function Home() {
   };
   return (
     <main className="bg-white w-full flex flex-col items-center overflow-hidden">
-      <div className=" relative w-full max-h-[841px] flex items-center justify-center ">
+      <div className="relative w-full max-h-[850px] flex items-center justify-center ">
         <Image
           src={mainBanner}
           alt="main-banner"
-          className="opacity-20 min-w-[1100px] max-h-full m-[250px]"
-          fixed
+          className="min-w-[1100px] h-full opacity-50"
+          placeholder="blur"
+          style={{
+            objectFit: "cover",
+          }}
         />
         <div className=" bg-slate-300 z-10 absolute inset-0 opacity-10" />
-        <ScrollActionBox className="text-[64px] font-bold flex flex-col absolute top-40 text-center gap-5">
-          <div>
+        <ScrollActionBox className="text-[64px] text-white font-bold flex flex-col absolute top-40 text-center gap-5">
+          <div className="text-[#2c2c2c]">
             <div>비즈니스 생태계 구축을 위한</div>
             <div>
-              <span className="text-blue-500">“데이터 Biz.</span>
-              <span className="text-blue-500">”</span>전문 기업
+              <span className="text-[#3886df]">“데이터 Biz.”</span>전문 기업
             </div>
           </div>
         </ScrollActionBox>
@@ -50,7 +53,7 @@ export default function Home() {
             viewBox="0 0 24 24"
             fill="currentColor"
             dataSlot="icon"
-            className="w-10 h-10 text-gray-300"
+            className="w-10 h-10"
           >
             <path
               fillRule="evenodd"
@@ -69,29 +72,46 @@ export default function Home() {
         비즈니스 생태계 구축을 위한 “데이터 Biz.” 전문 기업입니다`}
       </div>
 
-      <div className="min-h-screen py-[300px] whitespace-pre-line text-center text-[32px] font-bold bg-slate-100 w-full">
-        {`혁신적인 AI, 빅데이터분석 기술과 독창적인 사업 전략 전문가들이함께
-        비즈니스 생태계 구축을 위한 “데이터 Biz.” 전문 기업입니다`}
+      <div className="min-h-screen p-[300px] whitespace-pre-line text-center text-[32px] font-bold bg-slate-100 w-full break-words ">
+        {`contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent`}
       </div>
 
-      <div className="w-[1170px] py-[300px] flex flex-col gap-[150px]">
-        <div className="grid grid-cols-2 gap-[100px]">
+      <div className="w-[1170px] pb-[300px] flex flex-col">
+        <section className="grid grid-cols-2 gap-[100px] h-[700px] items-center">
           <ScrollActionBox className="" delay="200">
             <div className="h-[300px] bg-slate-200 w-full"></div>
           </ScrollActionBox>
           <ScrollActionBox className="">
-            <div className="h-[300px] bg-slate-200 w-full"></div>
+            <h1 className="text-[32px] font-bold">{`titletitletitletitle`}</h1>
+            <div className="h-[300px] w-full whitespace-pre-line break-words">
+              {`contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent`}
+            </div>
           </ScrollActionBox>
-        </div>
+        </section>
 
-        <div className="grid grid-cols-2 gap-[100px]">
+        <section className="grid grid-cols-2 gap-[100px] h-[700px] items-center">
           <ScrollActionBox className="">
-            <div className="h-[300px] bg-slate-200 w-full"></div>
+            <h1 className="text-[32px] font-bold">{`titletitletitletitle`}</h1>
+            <div className="h-[300px] w-full whitespace-pre-line break-words">
+              {`contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent`}
+            </div>
           </ScrollActionBox>
           <ScrollActionBox className="" delay="200">
             <div className="h-[300px] bg-slate-200 w-full"></div>
           </ScrollActionBox>
-        </div>
+        </section>
+
+        <section className="grid grid-cols-2 gap-[100px] h-[700px] items-center">
+          <ScrollActionBox className="" delay="200">
+            <div className="h-[300px] bg-slate-200 w-full"></div>
+          </ScrollActionBox>
+          <ScrollActionBox className="">
+            <h1 className="text-[32px] font-bold">{`titletitletitletitle`}</h1>
+            <div className="h-[300px] w-full whitespace-pre-line break-words">
+              {`contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent`}
+            </div>
+          </ScrollActionBox>
+        </section>
       </div>
     </main>
   );
