@@ -75,14 +75,14 @@ export default function Home() {
         ref={scrollTargetRef}
         className="sm:min-h-screen flex-col items-center h-[500px] text-[20px] sm:text-[32px] font-bold w-full text-center flex justify-center"
       >
-        <div className="whitespace-pre-line break-words w-[400px] sm:w-[1170px]">
+        <div className="whitespace-pre-line break-words w-[350px] sm:w-full">
           {`혁신적인 AI, 빅데이터분석 기술과 독창적인 사업 전략 전문가들이함께 
           비즈니스 생태계 구축을 위한 “데이터 Biz.” 전문 기업입니다`}
         </div>
       </div>
 
       <div className="sm:min-h-screen flex-col items-center h-[500px] text-[20px] sm:text-[32px] font-bold bg-slate-100 w-full text-center flex justify-center">
-        <div className="whitespace-pre-line break-words w-[400px] sm:w-[1170px]">
+        <div className="whitespace-pre-line break-words w-[350px] sm:w-full">
           {`contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent`}
         </div>
       </div>
