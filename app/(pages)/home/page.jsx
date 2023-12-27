@@ -66,17 +66,21 @@ export default function Home() {
 
       <div
         ref={scrollTargetRef}
-        className="min-h-screen py-[300px] whitespace-pre-line text-center text-[32px] font-bold"
+        className="min-h-screen py-[300px] text-[32px] font-bold w-full text-center flex justify-center"
       >
-        {`혁신적인 AI, 빅데이터분석 기술과 독창적인 사업 전략 전문가들이함께
+        <div className="whitespace-pre-line break-words max-w-[1170px]">
+          {`혁신적인 AI, 빅데이터분석 기술과 독창적인 사업 전략 전문가들이함께
         비즈니스 생태계 구축을 위한 “데이터 Biz.” 전문 기업입니다`}
+        </div>
       </div>
 
-      <div className="min-h-screen p-[300px] whitespace-pre-line text-center text-[32px] font-bold bg-slate-100 w-full break-words ">
-        {`contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent`}
+      <div className="min-h-screen py-[300px] text-[32px] font-bold bg-slate-100 w-full text-center flex justify-center">
+        <div className="whitespace-pre-line break-words max-w-[1170px]">
+          {`contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent`}
+        </div>
       </div>
 
-      <div className="w-[1170px] pb-[300px] flex flex-col">
+      <div className="sm:w-[1170px] w-full pb-[300px] flex flex-col">
         <section className="grid grid-cols-2 gap-[100px] h-[700px] items-center">
           <ScrollActionBox className="" delay="200">
             <div className="h-[300px] bg-slate-200 w-full"></div>

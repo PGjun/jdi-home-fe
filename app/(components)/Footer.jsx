@@ -1,7 +1,7 @@
 export const Footer = () => {
   return (
     <footer className="h-[500px] flex flex-col items-center justify-center text-slate-300 bg-slate-600 w-full">
-      <div className="grid grid-cols-5  w-[1170px]">
+      <div className="grid grid-cols-5 sm:w-[1170px]">
         <div className="w-full h-[200px] col-span-2">
           <div>(주) 제이디아이</div>
           <div className="whitespace-pre-line text-[14px] mt-[20px]">
@@ -13,7 +13,7 @@ export const Footer = () => {
         </div>
         {[1, 2, 3].map((item) => {
           return (
-            <div className="w-[200px] h-[200px]">
+            <div className="sm:w-[200px] w-full h-[200px]">
               <div>title</div>
               <div>contents</div>
               <div>contents</div>
@@ -24,7 +24,7 @@ export const Footer = () => {
           );
         })}
       </div>
-      <code className="w-[1170px] flex">© 2023 JDI, Inc.</code>
+      <code className="sm:w-[1170px] flex">© 2023 JDI, Inc.</code>
     </footer>
   );
 };
