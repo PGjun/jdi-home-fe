@@ -103,7 +103,7 @@ export default function Home() {
               <Image
                 src={jdiskill}
                 alt="jdiskill"
-                className="w-full h-full rounded-full shadow border-2 border-[#4c4c4c]"
+                className="w-full h-full rounded-full shadow-lg border-2 border-[#4c4c4c] shadow-blue-200"
                 placeholder="blur"
                 style={{ objectFit: 'cover' }}
               />
