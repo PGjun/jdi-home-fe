@@ -89,7 +89,7 @@ export default function Home() {
           <div className="p-[30px] font-normal whitespace-pre-line text-left ">
             <div>
               <span className="text-[22px] sm:text-[32px] font-extrabold text-blue-500">
-                JDI
+                제이디아이
               </span>
               <span className="text-[22px] sm:text-[32px]">는</span>
             </div>
