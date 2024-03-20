@@ -70,17 +70,17 @@ export const Header = () => {
         <nav className="hidden sm:flex gap-10 pr-10">
           {navmenu.map((menu) => {
             return (
-              <Link href={menu.path} key={menu.name}>
-                <button
-                  className={`hover:text-blue-500 ${
-                    menu.path == currentPathname
-                      ? 'text-blue-500'
-                      : 'text-slate-700'
-                  }  `}
-                >
-                  {menu.name}
-                </button>
-              </Link>
+              // <Link href={menu.path} key={menu.name}>
+              <button
+                className={`hover:text-blue-500 cursor-pointer ${
+                  menu.path == currentPathname
+                    ? 'text-blue-500'
+                    : 'text-slate-700'
+                }  `}
+              >
+                {menu.name}
+              </button>
+              // </Link>
             )
           })}
         </nav>
